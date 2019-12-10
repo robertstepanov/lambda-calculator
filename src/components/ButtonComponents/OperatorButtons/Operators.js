@@ -9,13 +9,13 @@ const Operators = () => {
   const [operatorsState] = useState(operators);
   return (
     <div>
-      {operatorsState.map(props => (
-        <button>{props.operators.char.values}</button>
-      ))
-      /* STEP 3 - Use .map() to iterate over your array data and return a button
+      {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/
-      }
+
+      operatorsState.map((char, values) => (
+        <OperatorButton key={char} values={values} />
+      ))}
     </div>
   );
 };
