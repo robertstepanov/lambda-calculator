@@ -5,6 +5,10 @@ import "./App.css";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
+import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
+import OperatorButton from "./components/ButtonComponents/OperatorButtons/OperatorButton";
+import SpecialButton from "./components/ButtonComponents/SpecialButtons/SpecialButton";
+import Display from "./components/DisplayComponents/Display";
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -17,7 +21,13 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
-        {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+        {
+          ((<NumberButton />), (<Display />))
+          //  (<OperatorButton />)
+          // (<SpecialButton />),
+          // (<Display />)
+          /* STEP 4 - Render your components here and be sure to properly import/export all files */
+        }
       </div>
     </div>
   );
