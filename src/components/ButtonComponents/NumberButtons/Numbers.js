@@ -20,7 +20,7 @@ const Numbers = props => {
       it any props needed by the child component*/}
 
       {buttonNumbers.map(number => (
-        <NumberButton key={number} text={number} />
+        <NumberButton key={number} text={number} addNumber={props.addNumber} />
       ))}
     </div>
   );
