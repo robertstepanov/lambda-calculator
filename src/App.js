@@ -6,7 +6,7 @@ import "./App.css";
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
 import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
-import OperatorButton from "./components/ButtonComponents/OperatorButtons/OperatorButton";
+// import OperatorButton from "./components/ButtonComponents/OperatorButtons/OperatorButton";
 import SpecialButton from "./components/ButtonComponents/SpecialButtons/SpecialButton";
 import Display from "./components/DisplayComponents/Display";
 
